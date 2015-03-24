@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Tickets in Pure CSS</title>
+<link href='http://fonts.googleapis.com/css?family=Nova+Round' rel='stylesheet' type='text/css'>
+<style>
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #444;
+}
+.ticket:before {
+    border-radius: 50%;
+    -webkit-box-shadow:  10.5em 0 0 #eee, -1.5em 0 0 #eee;
+	box-shadow: 10.5em 0 0 #fff, -1.5em 0 0 #fff;
+    content: "";
+    height: 0.8em;
+    left: 1.1em;
+    position: absolute;
+    top: 2.8em;
+    width: 0.8em;
+}
+.ticket {
+    border-left: 1px dashed #888;
+	border-right: 1px dashed #888;
+	font-size: 10px;
+    height: 6em;
+    position: relative;
+    width: 12em;
+	background: #2C2C2C;
+	border-radius: 0em;
+	color: #fff;
+	text-align:center;
+	
+}
+.tickettext {
+	padding-top: 2em;
+	font-size: 1.1em;
+	font-family: 'Nova Round', cursive;
+}
+
+.bigticket:before {
+    border-radius: 50%;
+    -webkit-box-shadow:  22.5em 0 0 #eee, -2em 0 0 #eee;
+	box-shadow: 22.5em 0 0 #fff, -2em 0 0 #fff;
+    content: "";
+    height: 1.5em;
+    left: 1.1em;
+    position: absolute;
+    top: 5em;
+    width: 1.5em;
+}
+.bigticket {
+    border-left: 1px dashed #888;
+	border-right: 1px dashed #888;
+	font-size: 12px;
+    height: 12em;
+    position: relative;
+    width: 24em;
+	background: #2C2C2C;
+	border-radius: 0em;
+	color: #fff;
+	text-align:center;
+	
+}
+.bigtickettext {
+	padding-top: 2em;
+	font-size: 2em;
+	font-family: 'Nova Round', cursive;
+}
+
+.tinyticket:before {
+    border-radius: 50%;
+    -webkit-box-shadow:  2.5em 0 0 #eee, -1.5em 0 0 #eee;
+	box-shadow: 2.5em 0 0 #fff, -1.5em 0 0 #fff;
+    content: "";
+    height: 0.5em;
+    left: 1.1em;
+    position: absolute;
+    top: .7em;
+    width: 0.8em;
+}
+.tinyticket {
+    border: 1px solid #888;
+	font-size: 10px;
+    height: 2em;
+    position: relative;
+    width: 4em;
+	background: #2C2C2C;
+	border-radius: 0em;
+	color: #fff;
+	text-align:center;
+	
+}
+</style>
+</head>
+
+<body>
+<h1>Tickets in Pure CSS</h1>
+<h3>Large Ticket</h3>
+<div class="bigticket">
+<p class="bigtickettext">Admit One</p>
+</div>
+
+<br />
+<br />
+
+<h3>Regular Ticket</h3>
+<div class="ticket">
+<p class="tickettext">Admit One</p>
+</div>
+
+<br />
+<br />
+
+<h3>Icon Ticket</h3>
+<div class="tinyticket">
+</div>
+
+</body>
+</html>
